@@ -1,0 +1,96 @@
+{
+
+"root": {
+	   "name":"apartman1",
+	   "images":[
+			
+			{
+			"id":1,
+			"url":"img/apartman1-sevid (1).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (1).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":2,
+			"url":"img/apartman1-sevid (2).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (2).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":3,
+			"url":"img/apartman1-sevid (3).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (3).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":4,
+			"url":"img/apartman1-sevid (4).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (4).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":5,
+			"url":"img/apartman1-sevid (5).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (5).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":6,
+			"url":"img/apartman1-sevid (6).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (6).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":7,
+			"url":"img/apartman1-sevid (7).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (7).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":8,
+			"url":"img/apartman1-sevid (8).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (8).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":9,
+			"url":"img/apartman1-sevid (9).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (9).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":10,
+			"url":"img/apartman1-sevid (10).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (10).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":11,
+			"url":"img/apartman1-sevid (11).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (11).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":12,
+			"url":"img/apartman1-sevid (12).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (12).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":13,
+			"url":"img/apartman1-sevid (13).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (13).png",
+			"alt": "sevid apartmani radacic"
+			},
+			{
+			"id":14,
+			"url":"img/apartman1-sevid (14).png",
+			"urlsmall":"img/SMALL/apartman1small-sevid (14).png",
+			"alt": "sevid apartmani radacic"
+			}
+	   
+	   
+	   ]
+	   }
+
+}

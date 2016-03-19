@@ -1,0 +1,263 @@
+
+
+
+<div class = "row animated fadeInLeft">
+<div class = "col-md-7">
+	
+<div class="panel panel-info">
+
+<div class="panel-heading">
+
+<div class="row">
+
+<!-- <div class="col-md-6 ">
+
+<img class="img-thumbnail img-responsive " src="img/thumbs.png" alt="...">
+
+</div> -->
+
+<div class="col-md-4 ">
+
+
+<img class="img-thumbnail img-responsive " src="img/thumbs.png" alt="...">
+  
+
+
+
+</div>
+
+<div class="col-md-8 margxx">
+
+<div class="row">
+
+	<div class="col-md-12">
+  <h1> <span class="label label-primary">A4 + 2</span></h1>
+  </div>
+  
+  
+</div>
+
+<div class="row">
+
+	<div class="col-md-12">
+  <p> <strong>Apartman za četiri osobe plus dva pomoćna ležaja (60 m2)</strong></p>
+  </div>
+  
+  
+</div>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+  <div class="panel-body">
+    
+<ul class="list-group">
+  <li class="list-group-item list-group-item-info"><strong>Info: </strong>TV - KLIMA -SATELITSKA TV</li>
+  <li class="list-group-item">Dapibus ac facilisis in</li>
+  <li class="list-group-item list-group-item-info">Morbi leo risus</li>
+  <li class="list-group-item">Porta ac consectetur ac</li>
+  <li class="list-group-item list-group-item-info"><h2 class="text-center">Booking Calendar</h2></li>
+</ul>
+
+
+
+<div ui-calendar="uiConfig.calendar" class="calendar" ng-model="eventSources1">
+</div>
+
+
+
+
+  </div>
+  <div class="panel-footer"></div>
+</div>
+
+
+
+
+
+</div>
+
+<div class="col-md-5">
+  
+  <div class="panel panel-info">
+
+<div class="panel-heading"><h2 class="text-center">Gallery</h2></div>
+  <div class="panel-body">
+    
+
+  <div class ="row" >
+
+<div class="col-xs-3" ng-repeat="image in images">
+<a href="{{image.url}}" class="swipebox" title="Apartmani">
+<img src="{{image.urlsmall}}" class="thumbnail img-responsive" alt="{{image.alt}}">
+</a>
+</div>
+
+
+</div>
+
+
+
+
+  </div>
+  <div class="panel-footer"></div>
+</div>
+
+
+<!-- test-->
+
+
+<div class="row">
+<div class="col-md-12">
+<div class="givemeborder">
+
+  <h2 class="text-center">Make a Booking <p class="lead">Send us some information...</p></h2>
+  <form role="form" class="form-horizontal">
+  
+  <div class="form-group">
+      <div class="col-sm-6"><input class="form-control" placeholder="Ime" type="text" ng-model ="booking.firstname"></div>
+      <div class="col-sm-6"><input class="form-control" placeholder="Prezime" type="text" ng-model ="booking.lastname"></div>
+    </div>
+    <div class="form-group">
+	 
+      <div class="col-sm-12"><input class="form-control" id="inputEmail1" placeholder="Email" type="email" ng-model ="booking.mail"></div>
+    </div>
+	
+	 <div class="form-group">
+      <div class="col-sm-6"><input class="form-control" placeholder="Telefon" type="text" ng-model ="booking.phone"></div>
+      <div class="col-sm-6"><input class="form-control" placeholder="Mobitel" type="text" ng-model ="booking.mobile"></div>
+    </div>
+	
+	
+	
+	<div class="form-group">
+	
+	
+	
+      <div class="col-sm-6">
+	  
+	  <datepicker date-format="dd-MM-yyyy" selector="form-control">
+		  <div class="right-inner-addon">
+			
+			  
+			<i class="fa fa-calendar"></i>
+			  <input class="form-control" placeholder="Dolazak" type="text" ng-model ="booking.dolazak">
+			  			 
+			  </datepicker>
+		 </div>
+	  </div>
+	 
+      <div class="col-sm-6 ">
+	  <datepicker date-format="dd-MM-yyyy" selector="form-control">
+		  <div class="right-inner-addon">
+			   <i class="fa fa-calendar"></i>
+			  <input class="form-control" placeholder="Odlazak" type="text" ng-model ="booking.odlazak">
+			  </datepicker>
+		  
+		  </div>
+	 </div>
+    </div>
+	
+	<div class="form-group">
+      <div class="col-sm-6"><label class="control-label">Broj odraslih: </label></div>
+      <div class="col-sm-6"><select class="form-control selectpicker" ng-model = "booking.brojodraslih">
+      <option value="">---Please select---</option>
+      <option value="0">0</option>
+        <option value="1">1</option>
+         <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+
+      </select></div>
+     
+    </div>
+	
+	
+
+     <div class="form-group">
+      <div class="col-sm-6"><label class="control-label">Broj djece do 6 godina: </label></div>
+      <div class="col-sm-6">
+      <select class="form-control selectpicker" ng-model = "booking.brojdjecedo6">
+      <option value="">---Please select---</option>
+      <option value="0">0</option>
+        <option value="1">1</option>
+         <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+      </select></div>
+     
+    </div>
+
+	<div class="form-group">
+      <div class="col-sm-6"><label class="control-label">Broj djece od 6 do 12 godina: </label></div>
+      <div class="col-sm-6"><select class="form-control selectpicker" ng-model = "booking.brojdjeceod6">
+      <option value="">---Please select---</option>
+      <option value="0">0</option>
+        <option value="1">1</option>
+         <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+
+      </select></div>
+     
+    </div>
+    
+    <div class="form-group">
+      
+      <div class="col-sm-12"><textarea class="form-control" id="TextArea" rows="7" placeholder="Upit" ng-model = "booking.upit"></textarea></div>
+    </div>
+    
+   
+    
+    <div class="form-group">
+      <div class="col-sm-12">
+        <button type="submit" class="btn btn-info btn-block " ng-click="sendEmail()">Submit</button>
+      </div>
+    </div>
+  </form>
+  
+  </div>
+  </div>
+</div>
+
+
+<!-- test-->
+  
+</div>
+
+
+</div>
+</div>
+
+<div> 
+
+<script>
+
+$('.selectpicker').selectpicker({
+  style: 'btn-info',
+  size: 4
+});
+</script>
+
+  
+  
+
+
+
+
+
+
+
+
+

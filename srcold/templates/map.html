@@ -1,0 +1,68 @@
+
+
+
+<div class="page-header">
+  
+<h2>{{"ContactUS-header" | translate}}</h2>
+
+</div>
+
+<div class ="row">
+
+
+      <div class="col-md-4">
+            
+            <h3>Send us message or contact us</h3>
+
+            <address>
+                <strong>Apartmani Radacic - Sevid</strong><br>
+                Krči 39, 21222 Sevid<br>
+                Sevid, Hrvatska<br>
+                <abbr title="Phone">P:</abbr> + 385992630257
+            </address>
+
+            <address>
+              <strong>E-MAIL ADDRESS:</strong><br>
+              <a href="mailto:#">first.last@example.com</a>
+            </address>
+
+      </div>
+
+<div class="col-md-8">
+      <div id="map">
+
+
+
+      </div>
+</div>
+
+</div>
+
+<script>
+     
+     var map = new GMaps({
+       div: '#map',
+       lat: 43.494526,
+       lng: 16.018088
+
+
+     });
+
+     map.addMarker({
+  lat: -12.043333,
+  lng: -77.028333,
+  title: 'Lima',
+  infoWindow: {
+  content: '<p>Apartmani Radacic</p>'
+}
+  
+});
+
+
+     
+
+             
+
+          </script>
+
+

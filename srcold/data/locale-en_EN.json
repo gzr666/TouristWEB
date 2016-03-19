@@ -1,0 +1,18 @@
+{
+
+		"HEADLINE": "Introducing ngTranslate",
+        "HOME":"Home",
+        "ABOUT":"About Us",
+        "LOCATION":"Location",
+        "GALLERY":"Gallery",
+        "LANGUAGE":"Language",
+        "test":"testen",
+
+       
+        "ContactUS-header" : "Contact Us",
+
+        "apartman1.name": "apartman1-en",
+        "apartman2.name": "apartman2-en"
+
+        
+}

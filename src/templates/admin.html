@@ -1,0 +1,85 @@
+<div class="row">
+
+<div class="col-md-6">
+
+ <button class="btn btn-primary" ng-click ="logmeOff()" >Odlogiraj se</button><br><br>
+<strong>{{ok}}</strong>
+
+
+<ol id="dynamic-options" class="nya-bs-select" ng-model="apartman" ng-change="dropdown(apartman)">
+    <li nya-bs-option="option in apartments">
+      <a>{{ option.name }}</a>
+    </li>
+  </ol>
+
+  <hr/>
+
+  
+
+<strong>Bookings</strong>
+
+
+	<div class="panel panel-success">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">Lista Bookinga &nbsp <i class="fa fa-level-down"></i></h3>
+		</div>
+
+		  <div class="panel-body">
+		    <ul class="list-group">
+		  <li class="list-group-item" ng-repeat = "booking in bookings"><i class="fa fa-thumbs-up"></i> </br>
+
+		 <span class="success">Datum pocetka: <strong>{{booking.start | date:'dd-MM-yyyy'}}</strong></span></br>
+		  <span>Datum isteka: <strong>{{booking.end | date:'dd-MM-yyyy'}}</strong></span>
+
+		  <button class="btn btn-primary pull-right lowerrmargin" ng-click="deleteBooking(booking)">Izbrisi</button>
+
+		  </li>
+		  
+		</ul>
+	
+	
+  		</div>
+	</div>
+
+</div>
+
+	
+<div class="col-md-6">
+
+
+
+      <form name="userForm" id="myform" class="form-signin" ng-submit="postForm(booking)" >
+        <h2 class="form-signin-heading">Dodaj Booking</h2>
+        <label for="inputEmail" class="sr-only">Datum Pocetka:</label>
+        <datepicker date-format="yyyy-MM-dd">
+        <input type="text" id="inputEmail" class="form-control" placeholder="Datum Pocetka"   ng-model="booking.start">
+        </datepicker>
+        <label for="inputPassword" class="sr-only">Datum Kraja</label>
+
+        <datepicker date-format="yyyy-MM-dd">
+        <input type="text" id="inputPassword" class="form-control" placeholder="Datum Kraja" ng-model="booking.end">
+        </datepicker>
+       
+
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit" >Dodaj Booking</button>
+      </form>
+
+
+
+
+
+
+
+    
+
+
+</div>
+
+
+
+
+</div>
+  
+
+  
