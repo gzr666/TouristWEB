@@ -109,6 +109,12 @@ input::-moz-focus-inner {
     padding: 10px 12px;
     pointer-events: none;
 }
+.googleFont
+{
+  font-size: 16px;
+  font-family: 'Exo', sans-serif;
+
+}
 
 
 /* ANIMATIONS
