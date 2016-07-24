@@ -5,6 +5,8 @@ angular.module("routerApp")
 
 	{
 
+		//popraviti ime apartmana koje se salje u mailu
+
 		$scope.name = "apartman" + $stateParams.id + ".name";
 		
 		$scope.images = [];
@@ -130,6 +132,8 @@ angular.module("routerApp")
 
 
 	});
+
+
 
 
 }());

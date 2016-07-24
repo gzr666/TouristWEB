@@ -30,8 +30,11 @@
 
 		 <span class="success">Datum pocetka: <strong>{{booking.start | date:'dd-MM-yyyy'}}</strong></span></br>
 		  <span>Datum isteka: <strong>{{booking.end | date:'dd-MM-yyyy'}}</strong></span>
+      </br>
+        </br>
 
-		  <button class="btn btn-primary pull-right lowerrmargin" ng-click="deleteBooking(booking)">Izbrisi</button>
+		 <!--  <button class="btn btn-primary pull-right lowerrmargin" ng-click="deleteBooking(booking)">Izbrisi</button> -->
+      <button class="btn btn-primary" ng-click="deleteBooking(booking)">Izbrisi Booking</button>
 
 		  </li>
 		  
@@ -44,7 +47,7 @@
 </div>
 
 	
-<div class="col-md-6">
+<div class="col-md-6 correctBooking">
 
 
 
@@ -52,12 +55,12 @@
         <h2 class="form-signin-heading">Dodaj Booking</h2>
         <label for="inputEmail" class="sr-only">Datum Pocetka:</label>
         <datepicker date-format="yyyy-MM-dd">
-        <input type="text" id="inputEmail" class="form-control" placeholder="Datum Pocetka"   ng-model="booking.start">
+        <input type="date" id="inputEmail" class="form-control" placeholder="Datum Pocetka"   ng-model="booking.start">
         </datepicker>
         <label for="inputPassword" class="sr-only">Datum Kraja</label>
 
         <datepicker date-format="yyyy-MM-dd">
-        <input type="text" id="inputPassword" class="form-control" placeholder="Datum Kraja" ng-model="booking.end">
+        <input type="date" id="inputPassword" class="form-control" placeholder="Datum Kraja" ng-model="booking.end">
         </datepicker>
        
 
